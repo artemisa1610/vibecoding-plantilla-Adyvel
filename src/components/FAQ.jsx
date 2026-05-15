@@ -7,14 +7,14 @@ function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-b border-[#e5d4c4]">
       <button
         className="w-full py-5 flex items-center justify-between text-left"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-base font-medium text-gray-900">{question}</span>
+        <span className="text-base font-medium text-[#704F43]">{question}</span>
         <svg
-          className={`w-5 h-5 text-gray-500 shrink-0 ml-4 transition-transform ${
+          className={`w-5 h-5 text-[#8f7268] shrink-0 ml-4 transition-transform ${
             isOpen ? "rotate-180" : ""
           }`}
           fill="none"
@@ -30,7 +30,7 @@ function FAQItem({ question, answer }) {
         </svg>
       </button>
       {isOpen && (
-        <p className="pb-5 text-gray-600 leading-relaxed">{answer}</p>
+        <p className="pb-5 text-[#7c6056] leading-relaxed">{answer}</p>
       )}
     </div>
   );
@@ -40,13 +40,13 @@ export default function FAQ() {
   const { heading, subheading, items } = siteConfig.faq;
 
   return (
-    <section id="faq" className="py-20 px-6 bg-gray-50">
+    <section id="faq" className="py-20 px-6 bg-[#f3eadc]">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#704F43] mb-4">
             {heading}
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-[#7c6056]">
             {subheading}
           </p>
         </div>

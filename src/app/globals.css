@@ -1,5 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap");
 @import "tailwindcss";
 
 @theme inline {
   --font-sans: var(--font-geist-sans);
+}
+
+:root {
+  --color-bg: #f8f3ea;
+  --color-surface: #f3eadc;
+  --color-text: #704f43;
+  --color-primary: #ff6d0d;
+  --color-primary-strong: #e75d00;
+  --color-accent: #368925;
+  --color-danger: #ce1109;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.font-rounded-food {
+  font-family: "Nunito", var(--font-geist-sans), sans-serif;
 }

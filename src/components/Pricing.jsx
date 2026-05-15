@@ -2,38 +2,49 @@ import { siteConfig } from "@/config/site";
 
 export default function Pricing() {
   const { heading, subheading, plans } = siteConfig.pricing;
+  const { enabled, paypalMeUsername, currency } = siteConfig.payment;
 
   return (
     <section id="pricing" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#704F43] mb-4">
             {heading}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[#7c6056] max-w-2xl mx-auto">
             {subheading}
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 items-start">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
+          {plans.map((plan, index) => {
+            const planAmount = Number(String(plan.price).replace(/[^\d.]/g, ""));
+            const hasValidAmount = Number.isFinite(planAmount) && planAmount > 0;
+            const paypalUrl =
+              enabled && paypalMeUsername
+                ? hasValidAmount
+                  ? `https://www.paypal.me/${paypalMeUsername}/${planAmount}${currency}`
+                  : `https://www.paypal.me/${paypalMeUsername}`
+                : "#contact";
+
+            return (
+              <div
+                key={index}
               className={`rounded-2xl p-8 border ${
                 plan.highlighted
-                  ? "border-indigo-600 bg-indigo-600 text-white shadow-xl scale-105"
-                  : "border-gray-200 bg-white"
+                  ? "border-[#FF6D0D] bg-[#FF6D0D] text-white shadow-lg"
+                  : "border-[#e9d9c8] bg-[#fffaf2]"
               }`}
             >
               <h3
                 className={`text-lg font-semibold mb-1 ${
-                  plan.highlighted ? "text-indigo-100" : "text-gray-900"
+                  plan.highlighted ? "text-orange-100" : "text-[#704F43]"
                 }`}
               >
                 {plan.name}
               </h3>
               <p
                 className={`text-sm mb-6 ${
-                  plan.highlighted ? "text-indigo-200" : "text-gray-500"
+                  plan.highlighted ? "text-orange-100" : "text-[#8f7268]"
                 }`}
               >
                 {plan.description}
@@ -42,7 +53,7 @@ export default function Pricing() {
                 <span className="text-4xl font-bold">{plan.price}</span>
                 <span
                   className={`text-sm ${
-                    plan.highlighted ? "text-indigo-200" : "text-gray-500"
+                    plan.highlighted ? "text-orange-100" : "text-[#8f7268]"
                   }`}
                 >
                   {plan.period}
@@ -53,7 +64,7 @@ export default function Pricing() {
                   <li key={i} className="flex items-center gap-3 text-sm">
                     <svg
                       className={`w-5 h-5 shrink-0 ${
-                        plan.highlighted ? "text-indigo-200" : "text-indigo-600"
+                        plan.highlighted ? "text-orange-100" : "text-[#368925]"
                       }`}
                       fill="none"
                       viewBox="0 0 24 24"
@@ -71,17 +82,20 @@ export default function Pricing() {
                 ))}
               </ul>
               <a
-                href="#contact"
+                href={paypalUrl}
+                target={enabled && paypalMeUsername ? "_blank" : undefined}
+                rel={enabled && paypalMeUsername ? "noopener noreferrer" : undefined}
                 className={`block w-full py-3 text-center rounded-full font-medium transition-colors ${
                   plan.highlighted
-                    ? "bg-white text-indigo-600 hover:bg-indigo-50"
-                    : "bg-indigo-600 text-white hover:bg-indigo-700"
+                    ? "bg-white text-[#FF6D0D] hover:bg-[#fff1e8]"
+                    : "bg-[#704F43] text-white hover:bg-[#5f4136]"
                 }`}
               >
                 {plan.cta}
               </a>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

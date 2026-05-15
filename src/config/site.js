@@ -10,26 +10,28 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   // INFORMACION DEL NEGOCIO
   // ─────────────────────────────────────────────
-  name: "VibeCoding",
-  tagline: "La plantilla perfecta para lanzar tu idea al mundo.",
+  name: "Pasticcio Lasagnas",
+  tagline: "Lasagnas artesanales por encargo, hechas en casa con amor.",
   description:
-    "Rapido, moderno y listo para personalizar a tu gusto.",
+    "La opcion deliciosa y sin complicaciones para familias ocupadas en la zona norte de Chihuahua.",
 
   // ─────────────────────────────────────────────
   // SECCION HERO (la primera pantalla que ven los visitantes)
   // ─────────────────────────────────────────────
   hero: {
-    badge: "Bienvenido a tu nuevo proyecto",
-    title: "Construye algo",
-    titleHighlight: "increible",
+    badge: "Hecho en casa, con sabor de verdad",
+    title: "La lasagna que te",
+    titleHighlight: "resuelve el dia",
+    // Variante visual del titulo: "classicBold" o "roundedFoodie"
+    titleVariant: "roundedFoodie",
     subtitle:
-      "La plantilla perfecta para lanzar tu idea al mundo. Rapido, moderno y listo para personalizar a tu gusto.",
-    ctaPrimary: "Empezar ahora",
-    ctaSecondary: "Ver mas",
+      "En Pasticcio Lasagnas cocinamos por encargo para que tu familia coma rico, casero y sin prisas, aunque tu agenda este llena.",
+    ctaPrimary: "Haz tu pedido",
+    ctaSecondary: "Ver menu",
     // Enlace del boton principal. Puedes poner una URL de Calendly o Google Calendar.
     // Ejemplo Calendly: "https://calendly.com/tu-usuario/30min"
     // Ejemplo Google Calendar: "https://calendar.google.com/calendar/appointments/..."
-    ctaPrimaryUrl: "#contacto",
+    ctaPrimaryUrl: "#contact",
     ctaSecondaryUrl: "#features",
   },
 
@@ -37,26 +39,26 @@ export const siteConfig = {
   // BENEFICIOS / FEATURES (seccion de caracteristicas)
   // ─────────────────────────────────────────────
   features: {
-    heading: "Todo lo que necesitas para lanzar",
-    subheading: "Caracteristicas disenadas para ayudarte a crecer.",
+    heading: "Una ayuda real para tus dias ocupados",
+    subheading: "Como tener una comida casera lista sin estres.",
     items: [
       {
         icon: "lightning",
-        title: "Rapido y eficiente",
+        title: "Pedido facil y rapido",
         description:
-          "Optimizado para velocidad. Tu sitio cargara en un instante y tus usuarios lo amaran.",
+          "Nos escribes, te confirmamos y coordinamos todo sin vueltas largas.",
       },
       {
         icon: "mobile",
-        title: "Diseno responsive",
+        title: "Sabor artesanal confiable",
         description:
-          "Se ve perfecto en cualquier dispositivo: celular, tablet o computadora.",
+          "Recetas caseras con ingredientes de calidad, pensadas para compartir en familia.",
       },
       {
         icon: "settings",
-        title: "Facil de personalizar",
+        title: "Para mamas que no paran",
         description:
-          "Cambia colores, textos e imagenes facilmente desde un solo archivo de configuracion.",
+          "Tu comida resuelta para que llegues a casa con tranquilidad.",
       },
     ],
   },
@@ -65,49 +67,49 @@ export const siteConfig = {
   // PRECIOS (planes de pago)
   // ─────────────────────────────────────────────
   pricing: {
-    heading: "Precios simples y transparentes",
+    heading: "Precios claros, porciones honestas",
     subheading:
-      "Elige el plan que mejor se adapte a tus necesidades. Sin costos ocultos.",
+      "Elige el tamano ideal para tu mesa. Todo se prepara por encargo.",
     plans: [
       {
-        name: "Basico",
-        price: "$0",
-        period: "/mes",
-        description: "Perfecto para empezar",
+        name: "Lasagna chica",
+        price: "$280",
+        period: "MXN",
+        description: "Ideal para 2 a 3 personas",
         features: [
-          "1 proyecto",
-          "Soporte por email",
-          "Actualizaciones basicas",
+          "Pasta y salsa casera",
+          "Queso gratinado al horno",
+          "Lista para calentar y servir",
         ],
-        cta: "Empezar gratis",
+        cta: "Quiero la chica",
         highlighted: false,
       },
       {
-        name: "Pro",
-        price: "$29",
-        period: "/mes",
-        description: "Para crecer tu negocio",
+        name: "Lasagna mediana",
+        price: "$420",
+        period: "MXN",
+        description: "Perfecta para 4 a 6 personas",
         features: [
-          "Proyectos ilimitados",
-          "Soporte prioritario",
-          "Todas las funcionalidades",
-          "Analiticas avanzadas",
+          "La favorita de la casa",
+          "Porcion abundante",
+          "Horneado artesanal",
+          "Ideal para comida familiar",
         ],
-        cta: "Empezar ahora",
+        cta: "Quiero la mediana",
         highlighted: true,
       },
       {
-        name: "Enterprise",
-        price: "$99",
-        period: "/mes",
-        description: "Para equipos grandes",
+        name: "Lasagna grande",
+        price: "$560",
+        period: "MXN",
+        description: "Rinde para 7 a 9 personas",
         features: [
-          "Todo lo de Pro",
-          "Soporte dedicado 24/7",
-          "Integraciones custom",
-          "SLA garantizado",
+          "Perfecta para reunion familiar",
+          "Textura cremosa y doradita",
+          "Lista para compartir",
+          "Sabor casero en cada capa",
         ],
-        cta: "Contactar ventas",
+        cta: "Quiero la grande",
         highlighted: false,
       },
     ],
@@ -118,32 +120,32 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   faq: {
     heading: "Preguntas frecuentes",
-    subheading: "Resolvemos tus dudas mas comunes.",
+    subheading: "Te respondemos rapido para que pidas con confianza.",
     items: [
       {
-        question: "Como puedo empezar a usar la plantilla?",
+        question: "Con cuanta anticipacion debo hacer mi pedido?",
         answer:
-          "Solo necesitas clonar el repositorio, instalar las dependencias con npm install y ejecutar npm run dev para verla en tu computadora.",
+          "Lo ideal es pedir con 24 horas de anticipacion para asegurar disponibilidad.",
       },
       {
-        question: "Necesito saber programar?",
+        question: "Tienen entrega a domicilio?",
         answer:
-          "No necesariamente. Puedes personalizar textos, colores e imagenes sin tocar codigo complejo. Solo edita el archivo src/config/site.js.",
+          "Si, entregamos en la zona norte de Chihuahua. Tambien puedes recoger en punto acordado.",
       },
       {
-        question: "Puedo usar mi propio dominio?",
+        question: "Las lasagnas ya vienen cocinadas?",
         answer:
-          "Si. Una vez que despliegues tu sitio en Vercel o cualquier otro hosting, puedes conectar tu dominio personalizado facilmente.",
+          "Si, van listas para disfrutar. Solo calientas y sirves.",
       },
       {
         question: "Que metodos de pago aceptan?",
         answer:
-          "Aceptamos tarjetas de credito y debito a traves de nuestra plataforma de pago segura.",
+          "Aceptamos transferencia y pago por PayPal.",
       },
       {
-        question: "Ofrecen soporte tecnico?",
+        question: "Puedo pedir para una reunion especial?",
         answer:
-          "Si. Todos los planes incluyen soporte por email. Los planes Pro y Enterprise tienen soporte prioritario.",
+          "Claro, te ayudamos a elegir porciones y opciones segun el numero de personas.",
       },
     ],
   },
@@ -152,31 +154,32 @@ export const siteConfig = {
   // SECCION DE CONTACTO
   // ─────────────────────────────────────────────
   contact: {
-    heading: "Contactanos",
+    heading: "Haz tu pedido aqui",
     subheading:
-      "Envianos un mensaje y te responderemos lo antes posible.",
+      "Escribenos y te confirmamos disponibilidad, precio y entrega.",
     // URL para agendar una cita (Calendly o Google Calendar)
     // Si no tienes, deja el valor vacio: ""
     schedulingUrl: "",
-    schedulingCta: "Agendar una llamada",
+    schedulingCta: "Agendar por WhatsApp",
     form: {
-      namePlaceholder: "Tu nombre",
-      emailPlaceholder: "tu@email.com",
+      namePlaceholder: "Tu nombre completo",
+      emailPlaceholder: "tucorreo@email.com",
       // Telefono es opcional. Cambia phoneRequired a true si quieres hacerlo obligatorio.
-      phonePlaceholder: "Tu numero de telefono (opcional)",
+      phonePlaceholder: "Tu telefono para confirmar pedido (opcional)",
       phoneRequired: false,
-      messagePlaceholder: "Escribe tu mensaje aqui...",
-      submitButton: "Enviar mensaje",
-      sendingButton: "Enviando...",
+      messagePlaceholder:
+        "Cuantas porciones necesitas, para que fecha y en que zona seria la entrega?",
+      submitButton: "Quiero hacer mi pedido",
+      sendingButton: "Enviando pedido...",
       successMessage:
-        "Mensaje enviado correctamente. Revisa tu email.",
+        "Gracias. Ya recibimos tu pedido y te contactaremos en breve.",
       errorMessage:
-        "Hubo un error al enviar. Intentalo de nuevo.",
+        "No pudimos enviar el pedido. Intentalo de nuevo en un momento.",
     },
     // Datos de contacto opcionales para mostrar en el footer o sidebar
-    email: "hola@vibecoding.com",
+    email: "hola@pasticciolasagnas.com",
     phone: "",
-    address: "",
+    address: "Zona norte, Chihuahua, Chihuahua",
   },
 
   // ─────────────────────────────────────────────
@@ -184,11 +187,12 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   nav: {
     links: [
-      { label: "Inicio", href: "#inicio" },
-      { label: "Features", href: "#features" },
-      { label: "Precios", href: "#precios" },
+      { label: "Inicio", href: "#hero" },
+      { label: "Menu", href: "#features" },
+      { label: "Galeria", href: "#galeria" },
+      { label: "Precios", href: "#pricing" },
       { label: "FAQ", href: "#faq" },
-      { label: "Contacto", href: "#contacto" },
+      { label: "Contacto", href: "#contact" },
     ],
   },
 
@@ -196,22 +200,23 @@ export const siteConfig = {
   // FOOTER
   // ─────────────────────────────────────────────
   footer: {
-    tagline: "Hecho con Next.js y mucho cafe.",
+    tagline: "Comida casera, calida y sin complicaciones para tu familia.",
     links: [
-      { label: "Inicio", href: "#inicio" },
-      { label: "Features", href: "#features" },
-      { label: "Precios", href: "#precios" },
-      { label: "Contacto", href: "#contacto" },
+      { label: "Inicio", href: "#hero" },
+      { label: "Menu", href: "#features" },
+      { label: "Galeria", href: "#galeria" },
+      { label: "Precios", href: "#pricing" },
+      { label: "Contacto", href: "#contact" },
     ],
-    copyright: "Todos los derechos reservados.",
+    copyright: "Todos los derechos reservados. Pasticcio Lasagnas.",
   },
 
   // ─────────────────────────────────────────────
   // EMAIL (notificaciones automaticas al recibir un contacto)
   // ─────────────────────────────────────────────
   email: {
-    subject: "Recibimos tu mensaje",
-    teamSignature: "El equipo de VibeCoding",
+    subject: "Recibimos tu pedido en Pasticcio Lasagnas",
+    teamSignature: "Equipo Pasticcio Lasagnas",
     // El remitente del email. Debe coincidir con tu dominio verificado en Resend.
     from: "onboarding@resend.dev",
   },
@@ -222,10 +227,10 @@ export const siteConfig = {
   // Estos valores son documentacion. Para cambiar colores en Tailwind v4,
   // edita el archivo src/app/globals.css y modifica las variables CSS.
   colors: {
-    primary: "indigo-600",    // Color principal (botones, acentos)
-    secondary: "gray-900",    // Color de textos principales
-    accent: "indigo-50",      // Fondos suaves y badges
-    background: "white",      // Fondo general
+    primary: "#FF6D0D",       // Botones y llamados de accion
+    secondary: "#704F43",     // Textos principales
+    accent: "#368925",        // Acentos naturales
+    background: "#F8F3EA",    // Fondo crema calido
   },
 
   // ─────────────────────────────────────────────
@@ -233,23 +238,46 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   payment: {
     // Cambia enabled a true cuando tengas tu cuenta de PayPal lista
-    enabled: false,
+    enabled: true,
     // Tu nombre de usuario de PayPal.me
     // Para obtenerlo: ve a paypal.com > Perfil > Configura tu link PayPal.me
     // Ejemplo: si tu link es paypal.me/juanperez, escribe "juanperez"
-    paypalMeUsername: "",
+    paypalMeUsername: "adyvelcr",
     // Monto sugerido en dolares. Pon 0 para que el comprador elija cuanto pagar.
     defaultAmount: 0,
-    currency: "USD",
-    buttonText: "Pagar con PayPal",
+    currency: "MXN",
+    buttonText: "Pagar anticipo por PayPal",
+  },
+
+  // ─────────────────────────────────────────────
+  // GALERIA
+  // ─────────────────────────────────────────────
+  gallery: {
+    heading: "Asi se ve un antojo bien cumplido",
+    subheading:
+      "Un vistazo real a nuestras lasagnas artesanales recien horneadas.",
+    items: [
+      {
+        src: "https://images.pexels.com/photos/5949888/pexels-photo-5949888.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Rebanada de lasagna artesanal de Pasticcio",
+      },
+      {
+        src: "https://images.pexels.com/photos/6941036/pexels-photo-6941036.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Lasagna dorada recien salida del horno",
+      },
+      {
+        src: "https://images.pexels.com/photos/6287295/pexels-photo-6287295.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Porcion de lasagna servida para comida familiar",
+      },
+    ],
   },
 
   // ─────────────────────────────────────────────
   // METADATOS SEO (lo que aparece en Google y redes sociales)
   // ─────────────────────────────────────────────
   metadata: {
-    title: "VibeCoding - Tu plantilla para lanzar rapido",
+    title: "Pasticcio Lasagnas | Lasagnas artesanales por encargo",
     description:
-      "La plantilla perfecta para lanzar tu idea al mundo. Rapido, moderno y listo para personalizar.",
+      "Lasagnas artesanales por encargo en la zona norte de Chihuahua. Comida casera, elegante y sin complicaciones para tu familia.",
   },
 };
