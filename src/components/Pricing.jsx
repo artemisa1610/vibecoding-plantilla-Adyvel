@@ -15,7 +15,7 @@ export default function Pricing() {
             {subheading}
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 items-start">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
           {plans.map((plan, index) => {
             const planAmount = Number(String(plan.price).replace(/[^\d.]/g, ""));
             const hasValidAmount = Number.isFinite(planAmount) && planAmount > 0;
@@ -29,7 +29,7 @@ export default function Pricing() {
             return (
               <div
                 key={index}
-              className={`rounded-2xl p-8 border ${
+              className={`flex flex-col rounded-2xl p-8 border h-full ${
                 plan.highlighted
                   ? "border-[#FF6D0D] bg-[#FF6D0D] text-white shadow-lg"
                   : "border-[#e9d9c8] bg-[#fffaf2]"
@@ -59,7 +59,7 @@ export default function Pricing() {
                   {plan.period}
                 </span>
               </div>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-grow">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm">
                     <svg

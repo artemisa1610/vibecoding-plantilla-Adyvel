@@ -5,14 +5,18 @@ import { siteConfig } from "@/config/site";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { name } = siteConfig;
+  const { logoSrc, logoAlt } = siteConfig.hero;
   const { links } = siteConfig.nav;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#f8f3ea]/90 backdrop-blur-md border-b border-[#e7dac7]">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#hero" className="text-xl font-semibold tracking-wide text-[#704F43]">
-          {name}
+        <a href="#hero" className="flex items-center shrink-0">
+          <img
+            src={logoSrc}
+            alt={logoAlt}
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop */}

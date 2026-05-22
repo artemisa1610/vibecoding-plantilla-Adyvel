@@ -13,38 +13,40 @@ export const siteConfig = {
   name: "Pasticcio Lasagnas",
   tagline: "Lasagnas artesanales por encargo, hechas en casa con amor.",
   description:
-    "La opcion deliciosa y sin complicaciones para familias ocupadas en la zona norte de Chihuahua.",
+    "La opción deliciosa y sin complicaciones para familias ocupadas en la zona norte de Chihuahua.",
 
   // ─────────────────────────────────────────────
   // SECCION HERO (la primera pantalla que ven los visitantes)
   // ─────────────────────────────────────────────
   hero: {
     badge: "Hecho en casa, con sabor de verdad",
-    title: "La lasagna que te",
-    titleHighlight: "resuelve el dia",
+    title: "Hecha sin prisa",
+    titleHighlight: "y mucha intención",
     // Variante visual del titulo: "classicBold" o "roundedFoodie"
     titleVariant: "roundedFoodie",
     subtitle:
-      "En Pasticcio Lasagnas cocinamos por encargo para que tu familia coma rico, casero y sin prisas, aunque tu agenda este llena.",
+      "Hecha con calma, para días sin tregua, noches que piden vino y momentos que merecen recordarse.",
     ctaPrimary: "Haz tu pedido",
-    ctaSecondary: "Ver menu",
+    ctaSecondary: "Ver menú",
     // Enlace del boton principal. Puedes poner una URL de Calendly o Google Calendar.
     // Ejemplo Calendly: "https://calendly.com/tu-usuario/30min"
     // Ejemplo Google Calendar: "https://calendar.google.com/calendar/appointments/..."
     ctaPrimaryUrl: "#contact",
-    ctaSecondaryUrl: "#features",
+    ctaSecondaryUrl: "#menu",
+    logoSrc: "/imagenes%20pasticcio/Logo%20Pasticcio.png",
+    logoAlt: "Logo de Pasticcio Lasagnas",
   },
 
   // ─────────────────────────────────────────────
   // BENEFICIOS / FEATURES (seccion de caracteristicas)
   // ─────────────────────────────────────────────
   features: {
-    heading: "Una ayuda real para tus dias ocupados",
-    subheading: "Como tener una comida casera lista sin estres.",
+    heading: "Una ayuda real para tus días ocupados",
+    subheading: "Cómo tener una comida casera lista sin estrés.",
     items: [
       {
         icon: "lightning",
-        title: "Pedido facil y rapido",
+        title: "Pedido fácil y rápido",
         description:
           "Nos escribes, te confirmamos y coordinamos todo sin vueltas largas.",
       },
@@ -56,9 +58,38 @@ export const siteConfig = {
       },
       {
         icon: "settings",
-        title: "Para mamas que no paran",
+        title: "Para mamás que no paran",
         description:
           "Tu comida resuelta para que llegues a casa con tranquilidad.",
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // MENU (sabores de lasagna)
+  // ─────────────────────────────────────────────
+  menu: {
+    heading: "Nuestras lasañas",
+    subheading:
+      "Elige tu sabor. Cada una se prepara por encargo, capa por capa, sin atajos.",
+    items: [
+      {
+        name: "Carne",
+        description:
+          "Nuestra clásica boloñesa: carne lentamente cocida en salsa de tomate, capas de pasta y bechamel cremosa.",
+        image: "/imagenes%20pasticcio/lasagna-pasticho.png",
+      },
+      {
+        name: "Pollo",
+        description:
+          "Pollo deshebrado con un toque casero, salsa suave de poblano o chipotle y queso gratinado.",
+        image: "/imagenes%20pasticcio/azteca.png",
+      },
+      {
+        name: "Vegetales",
+        description:
+          "Verduras de temporada, espinaca, champiñones y queso fundido con bechamel. Ligera, fresca y llena de sabor.",
+        image: "/imagenes%20pasticcio/vegetales.png",
       },
     ],
   },
@@ -67,49 +98,50 @@ export const siteConfig = {
   // PRECIOS (planes de pago)
   // ─────────────────────────────────────────────
   pricing: {
-    heading: "Precios claros, porciones honestas",
+    heading: "Elige tu tamaño",
     subheading:
-      "Elige el tamano ideal para tu mesa. Todo se prepara por encargo.",
+      "Porciones honestas para tu mesa. Todo se prepara por encargo.",
     plans: [
       {
-        name: "Lasagna chica",
-        price: "$280",
+        name: "Lasagna Individual",
+        price: "$220",
         period: "MXN",
-        description: "Ideal para 2 a 3 personas",
+        description:
+          "Ideal para ti. Una porción grande para una persona, perfecta para consentirte.",
         features: [
-          "Pasta y salsa casera",
-          "Queso gratinado al horno",
+          "Porción generosa para 1 persona",
           "Lista para calentar y servir",
+          "Horneado artesanal",
         ],
-        cta: "Quiero la chica",
+        cta: "Quiero individual",
         highlighted: false,
       },
       {
-        name: "Lasagna mediana",
-        price: "$420",
+        name: "Lasagna Doble",
+        price: "$320",
         period: "MXN",
-        description: "Perfecta para 4 a 6 personas",
+        description: "Perfecta para 2 personas. Ideal para cena en pareja o para compartir.",
         features: [
-          "La favorita de la casa",
-          "Porcion abundante",
+          "Rinde para dos comensales",
+          "Calientita, lista al momento",
           "Horneado artesanal",
-          "Ideal para comida familiar",
         ],
-        cta: "Quiero la mediana",
-        highlighted: true,
+        cta: "Quiero doble",
+        highlighted: false,
       },
       {
-        name: "Lasagna grande",
-        price: "$560",
+        name: "Lasagna Familiar",
+        price: "$1200",
         period: "MXN",
-        description: "Rinde para 7 a 9 personas",
+        description:
+          "Para reunión familiar, hasta 6 personas. Domingos largos sin cocinar.",
         features: [
-          "Perfecta para reunion familiar",
+          "Ideal para compartir en familia",
+          "Porción abundante",
           "Textura cremosa y doradita",
-          "Lista para compartir",
-          "Sabor casero en cada capa",
+          "Lista para tu mesa",
         ],
-        cta: "Quiero la grande",
+        cta: "Quiero familiar",
         highlighted: false,
       },
     ],
@@ -120,32 +152,32 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   faq: {
     heading: "Preguntas frecuentes",
-    subheading: "Te respondemos rapido para que pidas con confianza.",
+    subheading: "Te respondemos rápido para que pidas con confianza.",
     items: [
       {
-        question: "Con cuanta anticipacion debo hacer mi pedido?",
+        question: "¿Con cuánta anticipación debo hacer mi pedido?",
         answer:
-          "Lo ideal es pedir con 24 horas de anticipacion para asegurar disponibilidad.",
+          "Lo ideal es pedir con 24 horas de anticipación para asegurar disponibilidad.",
       },
       {
-        question: "Tienen entrega a domicilio?",
+        question: "¿Tienen entrega a domicilio?",
         answer:
-          "Si, entregamos en la zona norte de Chihuahua. Tambien puedes recoger en punto acordado.",
+          "Sí, entregamos en la zona norte de Chihuahua. También puedes recoger en punto acordado.",
       },
       {
-        question: "Las lasagnas ya vienen cocinadas?",
+        question: "¿Las lasañas ya vienen cocinadas?",
         answer:
-          "Si, van listas para disfrutar. Solo calientas y sirves.",
+          "Sí, van listas para disfrutar. Solo calientas y sirves.",
       },
       {
-        question: "Que metodos de pago aceptan?",
+        question: "¿Qué métodos de pago aceptan?",
         answer:
           "Aceptamos transferencia y pago por PayPal.",
       },
       {
-        question: "Puedo pedir para una reunion especial?",
+        question: "¿Puedo pedir para una reunión especial?",
         answer:
-          "Claro, te ayudamos a elegir porciones y opciones segun el numero de personas.",
+          "Claro, te ayudamos a elegir porciones y opciones según el número de personas.",
       },
     ],
   },
@@ -154,9 +186,9 @@ export const siteConfig = {
   // SECCION DE CONTACTO
   // ─────────────────────────────────────────────
   contact: {
-    heading: "Haz tu pedido aqui",
+    heading: "Haz tu pedido aquí",
     subheading:
-      "Escribenos y te confirmamos disponibilidad, precio y entrega.",
+      "Escríbenos y te confirmamos disponibilidad, precio y entrega.",
     // URL para agendar una cita (Calendly o Google Calendar)
     // Si no tienes, deja el valor vacio: ""
     schedulingUrl: "",
@@ -165,16 +197,16 @@ export const siteConfig = {
       namePlaceholder: "Tu nombre completo",
       emailPlaceholder: "tucorreo@email.com",
       // Telefono es opcional. Cambia phoneRequired a true si quieres hacerlo obligatorio.
-      phonePlaceholder: "Tu telefono para confirmar pedido (opcional)",
+      phonePlaceholder: "Tu teléfono para confirmar pedido (opcional)",
       phoneRequired: false,
       messagePlaceholder:
-        "Cuantas porciones necesitas, para que fecha y en que zona seria la entrega?",
+        "¿Cuántas porciones necesitas, para qué fecha y en qué zona sería la entrega?",
       submitButton: "Quiero hacer mi pedido",
       sendingButton: "Enviando pedido...",
       successMessage:
         "Gracias. Ya recibimos tu pedido y te contactaremos en breve.",
       errorMessage:
-        "No pudimos enviar el pedido. Intentalo de nuevo en un momento.",
+        "No pudimos enviar el pedido. Inténtalo de nuevo en un momento.",
     },
     // Datos de contacto opcionales para mostrar en el footer o sidebar
     email: "hola@pasticciolasagnas.com",
@@ -188,8 +220,8 @@ export const siteConfig = {
   nav: {
     links: [
       { label: "Inicio", href: "#hero" },
-      { label: "Menu", href: "#features" },
-      { label: "Galeria", href: "#galeria" },
+      { label: "Menú", href: "#menu" },
+      { label: "Acompaña", href: "#acompanamientos" },
       { label: "Precios", href: "#pricing" },
       { label: "FAQ", href: "#faq" },
       { label: "Contacto", href: "#contact" },
@@ -200,11 +232,11 @@ export const siteConfig = {
   // FOOTER
   // ─────────────────────────────────────────────
   footer: {
-    tagline: "Comida casera, calida y sin complicaciones para tu familia.",
+    tagline: "Comida casera, cálida y sin complicaciones para tu familia.",
     links: [
       { label: "Inicio", href: "#hero" },
-      { label: "Menu", href: "#features" },
-      { label: "Galeria", href: "#galeria" },
+      { label: "Menú", href: "#menu" },
+      { label: "Acompaña", href: "#acompanamientos" },
       { label: "Precios", href: "#pricing" },
       { label: "Contacto", href: "#contact" },
     ],
@@ -250,24 +282,23 @@ export const siteConfig = {
   },
 
   // ─────────────────────────────────────────────
-  // GALERIA
+  // ACOMPANAMIENTOS
   // ─────────────────────────────────────────────
   gallery: {
-    heading: "Asi se ve un antojo bien cumplido",
-    subheading:
-      "Un vistazo real a nuestras lasagnas artesanales recien horneadas.",
+    heading: "Acompáñala con…",
+    subheading: "",
     items: [
       {
-        src: "https://images.pexels.com/photos/5949888/pexels-photo-5949888.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        alt: "Rebanada de lasagna artesanal de Pasticcio",
+        name: "Pan con especies",
+        description: "Pan untado con nuestra mezcla especiada.",
+        image: "/imagenes%20pasticcio/pan.png",
+        alt: "Pan con especies de Pasticcio Lasagnas",
       },
       {
-        src: "https://images.pexels.com/photos/6941036/pexels-photo-6941036.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        alt: "Lasagna dorada recien salida del horno",
-      },
-      {
-        src: "https://images.pexels.com/photos/6287295/pexels-photo-6287295.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        alt: "Porcion de lasagna servida para comida familiar",
+        name: "Ensalada fresca",
+        description: "Ligera y de temporada para equilibrar.",
+        image: "/imagenes%20pasticcio/ensalada.png",
+        alt: "Ensalada fresca de Pasticcio Lasagnas",
       },
     ],
   },

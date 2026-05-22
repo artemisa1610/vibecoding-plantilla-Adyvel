@@ -12,6 +12,8 @@ export default function Hero() {
     ctaSecondary,
     ctaPrimaryUrl,
     ctaSecondaryUrl,
+    logoSrc,
+    logoAlt,
   } = siteConfig.hero;
   const titleClassByVariant = {
     classicBold: "text-6xl md:text-7xl font-sans font-extrabold tracking-normal leading-[1.05]",
@@ -23,9 +25,9 @@ export default function Hero() {
     <section id="hero" className="pt-32 pb-20 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <img
-          src="/imagenes%20pasticcio/Foto%20perfil%20sinfondo.png"
-          alt="Logo de Pasticcio Lasagnas"
-          className="w-14 md:w-16 object-contain mx-auto mb-2"
+          src={logoSrc}
+          alt={logoAlt}
+          className="h-24 md:h-32 w-auto object-contain mx-auto mb-4"
         />
         <span className="inline-block px-4 py-1.5 mb-4 text-base font-medium text-[#368925] bg-[#eaf4e7] rounded-full">
           {badge}
