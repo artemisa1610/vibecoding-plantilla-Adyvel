@@ -218,8 +218,8 @@ export const siteConfig = {
   // WHATSAPP (boton flotante)
   // ─────────────────────────────────────────────
   whatsapp: {
-    // Numero con codigo de pais Mexico (52) + 61412071188
-    phone: "5261412071188",
+    // Numero con codigo de pais Mexico (52) + 6142071188
+    phone: "526142071188",
     message: "¡Hola Pasticcio! Quiero hacer un pedido de lasaña",
     ariaLabel: "Escribir por WhatsApp",
   },
