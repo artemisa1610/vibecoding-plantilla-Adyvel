@@ -7,6 +7,7 @@ import Gallery from "@/components/Gallery";
 import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <ContactForm />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
